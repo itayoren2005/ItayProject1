@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <table id="ToDoList">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Task</th>
+                <th>SubTask</th>
+                <th></th>
+                <th>Finished</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- table content  -->
+        </tbody>
+    </table>
+
+    <input type="button" value="Delete" onclick="DeleteTask()">
+    <br>
+    <h2>Add Task</h2>
+    <input type="text" id="TaskContent" placeholder="Add Task">
+    <input type="button" value="Enter to List" onclick="AddTask()">
+    
+    <h2>Add to the Subtask that you chose</h2>
+    <input type="text" id="SubTaskContent" placeholder="Add Subtask">
+    <input type="button" value="Enter to Task" onclick="AddSubTask()">
+
+    <script src="ToDoList.js"></script>
+</body>
+</html>
